@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Department of Justice - Asset Seizure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: #0a0a2e;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .seizure-notice {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            border: 3px solid #1a237e;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .header {
+            border-bottom: 3px solid #1a237e;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .fbi-logo {
+            width: 120px;
+            margin-right: 25px;
+        }
+
+        .title {
+            color: #1a237e;
+            font-size: 2.4em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .banner {
+            background: #1a237e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            border-radius: 3px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            padding: 20px;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .official-text {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .case-details {
+            margin: 25px 0;
+            padding: 15px;
+            background: #e8eaf6;
+            border-left: 5px solid #1a237e;
+        }
+
+        .warning {
+            background: #f44336;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px 0;
+            text-align: center;
+            font-size: 1.4em;
+            border: 2px solid #b71c1c;
+        }
+
+        .signature {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #1a237e;
+        }
+
+        .stamp {
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+            opacity: 0.8;
+            transform: rotate(-10deg);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .animated-border {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            animation: border-pulse 2s infinite;
+        }
+
+        @keyframes border-pulse {
+            0% { border-color: #1a237e; }
+            50% { border-color: #f44336; }
+            100% { border-color: #1a237e; }
+        }
+    </style>
+</head>
+<body>
+    <div class="seizure-notice">
+        <div class="animated-border"></div>
+        <div class="header">
+            <img src="https://imagizer.imageshack.com/img924/4742/pejsE6.png" alt="FBI Seal" class="fbi-logo">
+            <h1 class="title">United States Department of Justice<br>Federal Bureau of Investigation</h1>
+        </div>
+
+        <div class="banner">
+            ✦ Official Seizure Notice ✦
+        </div>
+
+        <div class="content">
+            <p class="official-text">
+                This domain and associated assets have been seized by the Federal Bureau of Investigation 
+                pursuant to seizure warrants issued by the United States District Court for the Eastern District of Virginia 
+                under the authority of 18 U.S.C. §§ 981 and 982 relating to criminal violations of federal law.
+            </p>
+
+            <div class="case-details">
+                <p><strong>Case Number:</strong> 24-CR-00458-FBI</p>
+                <p><strong>Date Seized:</strong> October 15, 2024</p>
+                <p><strong>Violations:</strong></p>
+                <ul>
+                    <li>18 U.S.C. § 1030 - Computer Fraud and Abuse</li>
+                    <li>18 U.S.C. § 1956 - Money Laundering</li>
+                    <li>18 U.S.C. § 1960 - Illegal Money Transmitting Business</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                ⚠ WARNING: UNAUTHORIZED ACCESS TO THIS SYSTEM IS PROHIBITED BY LAW ⚠
+            </div>
+
+            <p class="official-text">
+                All individuals associated with this domain are under investigation. Any attempts to interfere with 
+                this seizure or access restricted systems may result in criminal prosecution under 18 U.S.C. § 1030 
+                with penalties including imprisonment of up to 10 years and fines up to $250,000.
+            </p>
+
+            <div class="signature">
+                <p><strong>Christopher A. Wray</strong><br>Director, Federal Bureau of Investigation</p>
+            </div>
+
+            <img src="https://imagizer.imageshack.com/img923/5819/JazHxE.png" 
+                 alt="DOJ Seal" class="stamp" width="120">
+        </div>
+
+        <footer>
+            This notice is part of Operation Dark Huntress | FBI Cyber Division
+        </footer>
+    </div>
+
+    <script>
+        // Background effect
+        document.body.addEventListener('mousemove', (e) => {
+            document.body.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, 
+                #1a237e 0%, #0a0a2e 70%)`;
+        });
+    </script>
+</body>
+</html>
